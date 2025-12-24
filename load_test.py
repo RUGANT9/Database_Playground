@@ -2,9 +2,9 @@ import asyncio
 import aiohttp
 import time
 
-URL = "http://127.0.0.1:8000/items?price_min=5000&price_max=10000"
-TOTAL_REQUESTS = 5000
-CONCURRENT_REQUESTS = 100
+URL = "http://127.0.0.1:9000/items?price_min=1000&price_max=10000"
+TOTAL_REQUESTS = 2000
+CONCURRENT_REQUESTS = 200
 
 
 async def fetch(session, i):
